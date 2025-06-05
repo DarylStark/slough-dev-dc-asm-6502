@@ -24,6 +24,7 @@ COPY --chown=developer:developer README.md /home/developer/
 USER developer
 
 # Add PATH
+# hadolint ignore=SC2016
 RUN echo 'export PATH=$PATH:~/.local/bin' >> /home/developer/.bashrc.local
 
 # Install py65mon
