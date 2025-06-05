@@ -11,7 +11,7 @@ USER root
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
     build-essential \
-    cc65 && \
+    cc65 \
     hexedit && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists
