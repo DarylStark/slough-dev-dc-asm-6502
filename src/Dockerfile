@@ -28,8 +28,8 @@ USER developer
 RUN echo 'export PATH=$PATH:~/.local/bin' >> /home/developer/.bashrc.local
 
 # Install py65mon
-RUN /home/developer/.cargo/bin/uv self update && \
-    /home/developer/.cargo/bin/uv tool install py65
+RUN /home/developer/.local/bin/uv self update && \
+    /home/developer/.local/bin/uv tool install py65
 
 # Configure Starship
 ENV PROMPTNAME="ASM6502"
